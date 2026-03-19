@@ -1,0 +1,29 @@
+[project]
+name = "data-collection-agent"
+version = "0.1.0"
+description = "LLM 驱动的多源数据智能处理智能体"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "hello-agents>=1.0.0",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.13.1",
+    "pypdf2>=3.0.1",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.2",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
